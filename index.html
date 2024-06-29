@@ -2,205 +2,91 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michael Lindemans - Portfolio</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="css/giga.components.css" rel="stylesheet" />
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="js/giga.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikkurogue - introduction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body class="dark">
-    <div class="topnav" id="myTopnav">
-        <div class="left">
-            <a href="#home" class="active"><i class="fa-solid fa-house"></i> <span class="item">Home</span></a>
-        </div>
-        <div class="right">
-            <a href="#skillset"><i class="fa-solid fa-screwdriver-wrench"></i> <span class="item">Skillset</span></a>
-            <a href="#mission"><i class="fa-solid fa-lightbulb"></i> <span class="item">Mission & Vision</span></a>
-            <a href="#about"><i class="fa-solid fa-address-card"></i> <span class="item">About Me</span></a>
-            <a href="#projects"><i class="fa-solid fa-diagram-project"></i> <span class="item">Projects</span></a>
-        </div>
-    </div>
-    <div class="hero" id="home">
-        <div class="text">
-            <h1>Michael Lindemans</h1>
-            <p class="typewriter">Software Developer, Consultant & Forward thinker!</p>
-        </div>
-    </div>
-    <!-- <hr class="animated"> -->
-    <div class="first-block" id="skillset">
-        <div class="hero-mini">
-            <div class="text">
-                <i class="fa-solid fa-screwdriver-wrench"></i> Skillset
-            </div>
-        </div>
-        <div class="container">
-            <div class="row justify-content-center content-flex-columns">
-                <div class="col mt-3 border-content">
-                    <span class="tech title">Front End</span>
-                    Technologies like <span class="tech"><i class="fa-brands fa-angular"></i> Angular, <i
-                            class="fa-brands fa-react"></i> React, <i class="fa-brands fa-vuejs"></i> Vue</span> and
-                    most popularly used frameworks are a part of my expertise. Since the start of my career
-                    I've always had to work on making my number 1 priority to keep learning and always widen my
-                    skillset. Especially given that <span class="tech"><i class="fa-brands fa-js"></i> JavaScript</span>
-                    is an ever-evolving
-                    language with many quirks and solutions to problems!
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#projects"><i class="fas fa-code"></i> Skills & Projects</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <h1>Hello, I'm mikkurogue</h1>
+        <p>Developer, father, coffee drinker.</p>
+    </section>
+    <main class="container">
+
+        <section id="about">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <p>I'm a fullstack engineer currently at <a href="https://bigmile.eu">BigMile</a>.
+                I try to learn as much as I can on the techonology side, as my domain experience in various fields
+                allows me to adapt and learn.
+            </p>
+            <p>
+                As a father of 1 currently, I try to balance my time between work, family and personal time. I enjoy
+                spending time with my family, playing games and learning new and exciting techniques in the tech world.
+                My latest craze has been for the <a href="https://go.dev"><i class="fa-brands fa-golang"></i> Go
+                    programming language</a>, and I have been
+                trying to learn as much as I can about it.
+            </p>
+        </section>
+        <section id="projects">
+            <h2><i class="fas fa-code"></i> Skills & Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3><i class="fa-brands fa-js"></i> TypeScript</h3>
+                    <p>For almost all my frontends I prefer to stack Next.js alongside TypeScript. However lately I have
+                        been invested in Vue and Svelte too!</p>
                 </div>
-                <div class="col mt-3  border-content">
-                    <span class="tech title">Back End</span>
-                    Technologies like <span class="tech"><i class="fa-brands fa-microsoft"></i> .NET 6, <i
-                            class="fa-brands fa-php"></i> PHP, <i class="fa-brands fa-node-js"></i> NodeJS</span> and of
-                    course lower level languages like <span class="tech">C++</span> are mostly part of my comfort zone.
+                <div class="project-card">
+                    <h3><i class="fa-brands fa-windows"></i> .NET</h3>
+                    <p>My classical background started in C# and .NET, though I've mainly strayed away from this I do
+                        still try to keep up some familiarity with the innovations.</p>
                 </div>
-                <div class="col mt-3  border-content">
-                    <span class="tech title">Mobile</span>
-                    Mobile technologies aren't yet part of my full skill set, however as I am a fast learner I am
-                    working on <span class="tech"><i class="fa-brands fa-swift"></i> Swift, <i
-                            class="fa-brands fa-uikit"></i> UIKit and <i class="fa-brands fa-android"></i> Kotlin</span>
-                    for native mobile development!
-                </div>
-            </div>
-        </div>
-    </div>
+                <div class="project-card">
+                    <h3><i class="fa-brands fa-golang"></i> Go</h3>
+                    <p>My most recent, and current favourite language is Go!</p>
 
-    <div class="mini-hero-spacing">
-    </div>
-
-    <div class="first-block" id="mission">
-        <div class="hero-mini">
-            <div class="text">
-                <i class="fa-solid fa-lightbulb"></i> Mission & Vision
-            </div>
-        </div>
-        <div class="container">
-            <div class="row content-flex-columns">
-                <div class="col mt-3  border-content">
-                    <span class="tech title">My personal mission </span>
-                    Is to help starting developers with learning the very basics. I do not share the philosophy of
-                    "Learn X language and you're good!".
-                    My philosophy is to pick a language to learn the basic principles, documentation protocols and how
-                    to go from <span class="tech">zero to MVP to a deployed application</span>.
-                    <br>
-                    On social media I see a plethora of influencers trying to push their programs and courses for
-                    specific languages with the promises of 6 figure jobs and high equity,
-                    when that is not the reason to start the course of a developer.
-                </div>
-                <div class="col mt-3  border-content">
-                    <span class="tech title">The future vision </span>
-                    Of having <span class="tech">talented developers</span> on the market is what we should all strive
-                    for and if I am the one to start this movement then I gladly will be at the forefront of it.
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="mini-hero-spacing">
-    </div>
-
-    <div class="first-block" id="about">
-        <div class="hero-mini">
-            <div class="text">
-                <img src="./img/me.jpeg" class="image-me mt-3" alt="about me" title="About me">
-            </div>
-        </div>
-        <div class="container mt-3">
-            <div class="row content-flex-columns">
-                <div class="col mt-3  border-content">
-                    I am a software developer (engineer, developer, rockstar) who has specialized in learning multiple
-                    languages and frameworks. I believe in <span class="tech">"the right tool for the job".</span>
-                    I am not a "front end" or "back end" developer, nor do I consider myself a "full stack" developer.
-                    <span class="tech">I am a software developer.</span>
-                    <br>
-                    As a colourblind developer I also try to immerse myself in the UX design world to be able to create
-                    applications and user interfaces for all to use that are easily accessible. I still have much to
-                    learn, but that is what makes the industry so flexible and great to work in.
-                </div>
-                <div class="col mt-3 border-content">
-                    I have experience in different branches and sectors, ranging from CRM's to dashboard and portals to
-                    factory software to the energy market in the Netherlands.
-                    I do not call myself an expert in these branches, but more a flexible worker to <span
-                        class="tech">learn the necessary skills</span> to create great software.
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="mini-hero-spacing">
-    </div>
-
-    <div class="first-block" id="projects">
-        <div class="hero-mini">
-            <div class="text">
-                <i class="fa-solid fa-diagram-project"></i> Projects
-            </div>
-        </div>
-        <div class="container mt-3">
-            <div class="row content-flex-columns">
-                <div class="col mt-3  border-content">
-                    Currently working on a project codenamed <span class="tech">OnlyCodes</span>. It's a self-learning project to recreate a form of Twitter but completely targeted towards people within the STEM fields.
-                    The terminology is also based on programmer-lingo. Think "commit" for a reply, "merge" to create a new post (as you merge the post into the feed), "fork" as a form of "retweeting".
-                    <br>
-                    The tech used for it on the front end are <span class="tech"><i class="fa-brands fa-react"></i>React</span> and <span class="tech"><i class="fa-solid fa-mug-saucer"></i>ChakraUI</span>.
-
-                    <br><br>
-                   The backend is all done in <span class="tech"><i class="fa-brands fa-firebase"></i>Firebase</span>.
-
-                    <br>
-                    Links to the <span class="tech"><i class="fa-brands fa-github"></i> Github</span> repositories coming soon.
-                </div>
-            </div>
-
-            <div class="row content-flex-columns">
-                <div class="col mt-3 border-content">
-                     <span class="tech">CI-CD Overview</span> for the project described above visit <a class="ext" href="https://mikkelzu.github.io/ci-cd-overview/" target="_blank" rel="noopener noreferrer">CI-CD Overview.</a>
-                    <br>
-                    This project is a React app thats hosted on github pages with the <span class="tech">gh-pages</span> npm package. Soon this will provide some more information for the CI/CD pipeline for more details
-                    on each build that is created.
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="mini-hero-spacing">
-    </div>
-
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col mt-3 ">
-                    <a class="social-link" href="https://www.linkedin.com/in/mrj-lindemans" target="_blank"> <i
-                            class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
-                    <a class="social-link" href="https://github.com/Mikkelzu" target="_blank"><i
-                            class="fa-brands fa-github"></i> Github</a>
-                </div>
-                <div class="col mt-3  ">
                     <p>
-                        I believe in privacy, so this website does not use any cookies or tracking at all.
+                        I have a few open source projects up on github. Mainly <a
+                            href="https://github.com/mikkurogue/dagger">Dagger</a> and <a
+                            href="https://github.com/mikkurogue/goilerplate-api">Goilerplate API</a>. Both of these are
+                        mostly just for my own use, but I do try to keep them up to date and working.
                     </p>
                 </div>
-                <div class="col mt-3  ">
-                    <span class="contact-span">
-                        To contact me, feel free to send me a message on <a class="contact-link"
-                            href="https://www.linkedin.com/in/mrj-lindemans" target="_blank"> <i
-                                class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
-                    </span>
-                    <span class="contact-span">
-                        You can also email me <a class="contact-link" href="mailto:michael.lindemans@outlook.com">
-                            here</a>
-                    </span>
+                <!-- <div class="project-card">
+                    <h3><i class="fas fa-project-diagram"></i> Project 4</h3>
+                    <p>[Project description]</p>
                 </div>
+                <div class="project-card">
+                    <h3><i class="fas fa-project-diagram"></i> Project 5</h3>
+                    <p>[Project description]</p>
+                </div>
+                <div class="project-card">
+                    <h3><i class="fas fa-project-diagram"></i> Project 6</h3>
+                    <p>[Project description]</p>
+                </div> -->
             </div>
-        </div>
-    </div>
+        </section>
+        <section id="contact">
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <p><i class="fas fa-envelope"></i>
+                <a href="https://github.com/mikkurogue"><i class="fa-brands fa-github"></i> My Github</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mikkurogue. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
