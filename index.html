@@ -4,89 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mikkurogue - introduction</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Mikkurogue</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#projects"><i class="fas fa-code"></i> Skills & Projects</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
+    <div class="container">
+        <nav class="navbar">
+            <a href="https://www.linkedin.com/in/mrj-lindemans/">
+                <i class="devicon-linkedin-plain-wordmark"></i>
+            </a>
+
+            <a href="https://github.com/mikkurogue">
+                <i class="devicon-github-original-wordmark"></i>
+            </a>
+
         </nav>
-    </header>
-    <section id="hero">
-        <h1>Hello, I'm mikkurogue</h1>
-        <p>Developer, father, coffee drinker.</p>
-    </section>
-    <main class="container">
 
-        <section id="about">
-            <h2><i class="fas fa-user"></i> About Me</h2>
-            <p>I'm a fullstack engineer currently at <a href="https://bigmile.eu">BigMile</a>.
-                I try to learn as much as I can on the techonology side, as my domain experience in various fields
-                allows me to adapt and learn.
-            </p>
-            <p>
-                As a father of 1 currently, I try to balance my time between work, family and personal time. I enjoy
-                spending time with my family, playing games and learning new and exciting techniques in the tech world.
-                My latest craze has been for the <a href="https://go.dev"><i class="fa-brands fa-golang"></i> Go
-                    programming language</a>, and I have been
-                trying to learn as much as I can about it.
-            </p>
-        </section>
-        <section id="projects">
-            <h2><i class="fas fa-code"></i> Skills & Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3><i class="fa-brands fa-js"></i> TypeScript</h3>
-                    <p>For almost all my frontends I prefer to stack Next.js alongside TypeScript. However lately I have
-                        been invested in Vue and Svelte too!</p>
-                </div>
-                <div class="project-card">
-                    <h3><i class="fa-brands fa-windows"></i> .NET</h3>
-                    <p>My classical background started in C# and .NET, though I've mainly strayed away from this I do
-                        still try to keep up some familiarity with the innovations.</p>
-                </div>
-                <div class="project-card">
-                    <h3><i class="fa-brands fa-golang"></i> Go</h3>
-                    <p>My most recent, and current favourite language is Go!</p>
+        <div class="content">
+            <img class="av"
+                src="https://avatars.githubusercontent.com/u/5637842?s=400&u=bcd6af1eb202b61177b6f64ec4ba0e01267b3519&v=4"
+                alt="Developer Avatar" />
+            <h1>mikkurogue</h1>
+            <p id="sub-text"></p>
 
-                    <p>
-                        I have a few open source projects up on github. Mainly <a
-                            href="https://github.com/mikkurogue/dagger">Dagger</a> and <a
-                            href="https://github.com/mikkurogue/goilerplate-api">Goilerplate API</a>. Both of these are
-                        mostly just for my own use, but I do try to keep them up to date and working.
-                    </p>
-                </div>
-                <!-- <div class="project-card">
-                    <h3><i class="fas fa-project-diagram"></i> Project 4</h3>
-                    <p>[Project description]</p>
-                </div>
-                <div class="project-card">
-                    <h3><i class="fas fa-project-diagram"></i> Project 5</h3>
-                    <p>[Project description]</p>
-                </div>
-                <div class="project-card">
-                    <h3><i class="fas fa-project-diagram"></i> Project 6</h3>
-                    <p>[Project description]</p>
-                </div> -->
+            <div class="buttons">
+
+
+                <i class="devicon-go-original-wordmark"></i>
+                <i class="devicon-typescript-plain"></i>
+                <i class="devicon-nextjs-plain"></i>
+                <i class="devicon-rust-original"></i>
+                <i class="devicon-lua-plain"></i>
+                <i class="devicon-csharp-plain"></i>
+                <i class="devicon-graphql-plain"></i>
+                <i class="devicon-php-plain"></i>
+                <i class="devicon-nodejs-plain-wordmark"></i>
+                <i class="devicon-linux-plain"></i>
+                <i class="devicon-windows8-original"></i>
+                <i class="devicon-apple-original"></i>
+                <i class="devicon-neovim-plain"></i>
+                <i class="devicon-vscode-plain"></i>
+                <i class="devicon-prisma-original"></i>
             </div>
-        </section>
-        <section id="contact">
-            <h2><i class="fas fa-envelope"></i> Contact</h2>
-            <p><i class="fas fa-envelope"></i>
-                <a href="https://github.com/mikkurogue"><i class="fa-brands fa-github"></i> My Github</a>
-            </p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Mikkurogue. All rights reserved.</p>
-    </footer>
+        </div>
+
+        <div class="footer">
+            &copy; 2024 Mikkurogue
+        </div>
+    </div>
 </body>
+
+<script>
+    let texts = [
+        "I enjoy naming files 'finalFinalVersion' just to rename them again.",
+        "My favorite part of coding is spending hours on features no one asked for.",
+        "I enjoy starting side projects then abandoning them.",
+        "I installed Arch Linux just to tell people I installed Arch Linux (in a VM btw).",
+        "I keep telling myself I'll remember the Vim commands next time.",
+        "Jira tickets: where good ideas go to wait.",
+        "I enjoy naming variables 'foo' and 'bar' just to confuse myself later.",
+        "Sometimes, I intentionally use : any in TypeScript just to see the world burn.",
+    ]
+
+    function displayRandomText() {
+        const subTextElement = document.getElementById('sub-text');
+        const randomIndex = Math.floor(Math.random() * texts.length);
+        subTextElement.textContent = texts[randomIndex];
+    }
+
+    displayRandomText();
+    setInterval(displayRandomText, 3000);
+
+</script>
 
 </html>
