@@ -20,12 +20,16 @@ body {
     width: 100%;
     display: flex;
     gap: 2em;
-    justify-items: center;
+    justify-content: space-evenly;
     padding-top: 1em;
-    padding-left: 3em;
     position: fixed;
     top: 0;
     z-index: 10;
+    background-color: #191724;
+}
+
+.navbar a {
+    display: flex;
 }
 
 a {
@@ -87,6 +91,19 @@ a:hover {
 }
 
 .footer {
-    position: absolute;
+    height: 100px;
+    display: flex;
+    position: static;
     bottom: 25px;
+    width: 100%;
+    justify-content: center;
+    border-top: solid 1px #c4a7e7a1;
+    margin-top: 1em;
+}
+
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

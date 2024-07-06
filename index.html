@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -56,8 +57,40 @@
             </div>
         </div>
 
+        <!-- <div class="code-container">
+            <pre class="language-go"><code class="language-go">
+          // Go Example
+          package main
+          
+          import "fmt"
+          
+          func main() {
+              fmt.Println("Hello, World!")
+          }
+            </code></pre>
+        </div>
+
+        <div class="code-container">
+            <pre class="language-typescript"><code class="language-typescript">
+          // TypeScript Example
+          let message: string = 'Hello, World!';
+          console.log(message);
+            </code></pre>
+        </div>
+
+        <div class="code-container">
+            <pre class="language-rust"><code class="language-rust">
+          // Rust Example
+          fn main() {
+              println!("Hello, World!");
+          }
+            </code></pre>
+        </div> -->
+
         <div class="footer">
-            &copy; 2024 Mikkurogue
+            <div class="footer-item">
+                <p>&copy; 2024 Mikkurogue</p>
+            </div>
         </div>
     </div>
 </body>
@@ -84,5 +117,10 @@
     setInterval(displayRandomText, 3000);
 
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-go.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-rust.min.js"></script>
 
 </html>
