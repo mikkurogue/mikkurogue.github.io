@@ -93,11 +93,12 @@ a:hover {
 .footer {
     height: 100px;
     display: flex;
-    position: static;
-    bottom: 25px;
+    position: absolute;
+    bottom: 0;
     width: 100%;
     justify-content: center;
     border-top: solid 1px #c4a7e7a1;
+    background-color: #191724;
     margin-top: 1em;
 }
 
