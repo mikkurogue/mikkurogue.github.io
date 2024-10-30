@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why agile?</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="https://www.linkedin.com/in/mrj-lindemans/">
+                <i class="devicon-linkedin-plain-wordmark"></i>
+            </a>
+
+            <a href="https://github.com/mikkurogue">
+                <i class="devicon-github-original-wordmark"></i>
+            </a>
+
+        </nav>
+
+        <div class="content blog">
+            <img class="av"
+                src="https://avatars.githubusercontent.com/u/5637842?s=400&u=bcd6af1eb202b61177b6f64ec4ba0e01267b3519&v=4"
+                alt="Developer Avatar" />
+            <h1>Why agile?</h1>
+            <span id="date" class="date"></span>
+           <p id="sub-text">
+           Lately, I have been having these intrusive thoughts (at least that is what I call them) about agile. 
+           Not so much in the sense that I believe or do not believe in it, but more so "why"?
+           </p>
+
+           <p class="sub-text">Like, "Why do we just suddenly add extra ceremonies and meetings to our already tight calendars?" 
+           or "Why are we trying to do something that clearly has a negative reaction from the developer community?".</p>
+
+           <p class="sub-text">Don't get me wrong, I believe that the original <a href="https://agilemanifesto.org/" target="_blank">Agile manifesto</a> is
+           a pretty well thought out and great document. The twelve principles work well, but just not in the current space it seems. <br />
+           From what seems to be a movement brought on by development teams to be more customer/user/product central it sure has been ruined and bastardised even by
+           many of these so-called gurus.
+           </p>
+
+           <p class="sub-text">You're telling me that we desperately <i>need</i> product owners, scrum masters, agile coaches? As if they are the backbone
+           to the software development world? I don't buy it, not one bit. Sure, if these people were through and through technical, and potentially would have some decent sway in 
+           how to operate a team efficiently I could see a role for them but in general? Sorry buddy, your job title seems overblown.</p>
+
+           <p class="sub-text">What? We <u><b><i>must</i></b></u> now plan in meetings to sync? Oh, a standup where time is allocated to 15 minutes but the inital 10 is used on meaningless chit-chat?
+           What about planning poker? Backlog grooming to determine planning? Damn, that seems like a job <b>not for a developer</b>, or am I just crazy?</p>
+
+           <p class="sub-text">
+           Ok, enough bashing for now. I can definitely see and understand where it's all coming from, I understand that using T-Shirt sizing to determine effort of a task <i>could</i> be helpful.
+           I understand that we are all locked to the doom and gloom of "we must deliver, and we must deliver ASAP". I also definitely understand the idea that "developers just are not with people". 
+           For Christ's sake, I am self admittedly <u>awful</u> when dealing with people. In college I was put through a mandatory "soft-skills class" because of my brazen and relatively combative attitude.
+           So I can potentially see the value of a PO/PM that is technical enough (important I would assume) to be the revolving door of information from client to developer. But in reality, I have only ever met 
+           these people as non-technical, buzzword enjoying, leader types that try to take control of the SDLC in its totality.
+           </p>
+
+           <p class="sub-text">Maybe I am just looking way to deep into this, and need to let people understand that by having a team that is "agile" should also mean a team that is autonomous.
+           But given that the old standard of what the agile manifesto is saying has been essentially taken out back, I doubt anyone would see it this way.</p>
+
+           <p class="sub-text">
+           If the authors and signees of the manifesto are abandoning it and saying "Whatever agile is today, is not what we envisioned" then doesn't that mean to be telling in some way?
+           </p>
+
+           <p class="sub-text">Anyway, this incoherent rambling of a grug brained developer has come to an end. Maybe one day I'll become one of these PO/PM types myself and totall backtrack everything I've said.
+
+           <br /> <i>I sincerely hope not</i></p>
+
+        </div>
+
+           </div>
+</body>
+<script>
+  const date = new Date("Wed Oct 30 2024 20:48:30 GMT+0100 (Keski-Euroopan normaaliaika)");
+
+  const dateEl = document.getElementById("date");
+
+  dateEl.innerHTML = `Published on ${date.toLocaleDateString()} @ ${date.toLocaleTimeString()}`
+</script>
+</html>
