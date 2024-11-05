@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty in simplicity</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="https://www.linkedin.com/in/mrj-lindemans/">
+                <i class="devicon-linkedin-plain-wordmark"></i>
+            </a>
+
+          <span style="display: flex; flex-direction: row; gap:24px;">
+            <a href="https://github.com/mikkurogue">
+                <i class="devicon-github-original-wordmark"></i>
+            </a>
+
+            <a href="/blog">
+              <i class="devicon-ie10-original"></i>
+            </a>
+         </span>
+        </nav>
+
+        <div class="content blog">
+            <img class="av"
+                src="https://avatars.githubusercontent.com/u/5637842?s=400&u=bcd6af1eb202b61177b6f64ec4ba0e01267b3519&v=4"
+                alt="Developer Avatar" />
+            <h1>Beauty in simplicity.</h1>
+            <span id="date" class="date"></span>
+           <p id="sub-text">
+           I have lately been pondering why I like writing Go, even though my career started in writing C# and evolved to PHP, JavaScript, TypeScript, and even a little bit of VB.NET.
+           Though I still write most of my professional code in TypeScript, which is sometimes a bummer, I can spend time in my private life to learn something new or something different.
+           Like in 2024 alone, I have spent more time learning Linux (Arch, btw), Go, Zig, Rust, C++ (mostly for Wayland stuff), Objective C, Swift and Lua. I feel deep fulfilment from learning and
+           bettering myself. In my job, I write mostly just basic half-baked, rushed and ultimately nothing special React components in Next and hoping that the day is over so I can go and write more Go.
+           </p>
+
+           <p class="sub-text">
+           So, more on topic, I believe Go to be so much more simple than TypeScript. I will just compare the languages in terms of getting stuff done and writing
+           nice readable code. TypeScript (and JavaScript, lets be honest TS is just a fancy linter for JS) has so many different approaches, which at first was something attractive to me.
+           Imagine being able to write a type definition for an object as a Type or Interface?! That is the creative way I want to write my code!
+           </p>
+
+           <p class="sub-text">But thinking about that, I much more like Go and its type definitions for object to just be Struct. Structures should be represented simply. Sure we can use interfaces
+           to create an object definition, but no one really does this. It's more of an instance of something to have methods that must be implemented for instance. <br />
+           The endless discussions on syntax and syntactic sugar in TS projects is also crazy annoying. The discussions on Type vs Interface, function or arrow functions, const not being a real constant, var or let,
+           the decision of linters (ESLint, Biome). I could go on but I wont to save time.
+           </p>
+
+           <p class="sub-text">
+           I wont say TS is a terrible or a bad language, it's just a bad time to do things when people are being pseudo-engineers understanding some syntactic difference. 
+           People say "Yeah, but TS is a static language" but then you can just add a quick 'as any' to anything and look, type checking is basically gone. Oh, you cant use that? 
+           just add a @ts-ignore to the file and look typing means absolutely nothing. TS is nothing but a fancy linter for JS and it forces "one language ponies" who have no 
+           real development experience or knowledge of the basic typing systems. Give a TS developer Rust and watch them panic that they can't cheat code with 'as any'.
+           </p>
+
+           <p class="sub-text">
+           I mean type systems aren't necessarily easy or simple, but comparing Go to TS just makes Go the better choice. Even looking past types, its just a much easier headspace.
+           Only like, what 26 (?) keywords?! That's nice. Pointers? Hell yeah so we can make sure we are mutating the correct object in memory. Actual constants?! Man, I might cry how great is that.
+           Sure Go has some weird (terrible) quirks, like the newly added function iterators in Go 1.23. That shit is awful. But, it much more beats the stupid discussions we have to have about 
+           "Oh but you should use a array.map() here instead of a array.forEach() because its more performant!!". Let me just use a "for in range" and be done with it.
+           </p>
+
+           <p class="sub-text">
+           "But errors! Go sucks for errors handling" I hear you scream at me through the meta physical husk that is the bond we share when you read this post.
+           I hear you, and I will just disagree. Sure, it might be tedious to have to do a "if err != nil" check on most functions and implementations you do.
+           But, I guarantee you would rather want to handle errors like this, when they are values, than having to mess around with try/catch blocks. Coloured functions and not 
+           knowing how to figure out what is async so everything is async in the scope of an async function, throwing errors to crash the app and God forbid you use a 3rd party library that then doesn't
+           handle errors either. <br /><br />
+
+           In Go, and Zig, and Rust, it's typical to handle errors as values and to panic on something when you have violated the core rules of the app. Not to use throw (panic) as the default way and then
+           having to catch the error (which is also usually of type unknown) so you can't even figure out what the error even is per-se.
+           </p>
+
+           <p class="sub-text">Let's not even start on go routines vs async functions where async is literally a scam and a huge stinky code smell compared to go routines.</p>
+
+            <p class="sub-text">
+            Look, this got off track a little but I believe that anyone who is writing TS (especially backend guys writing APIs), they should look at Go and figure out things for themselves.
+            I believe that once devs read into Go for their APIs, they might actually finally see what we all know by now; JavaScript on the server was and still is a mistake.
+            </p>
+
+           <br /> <i>A man can only hope</i>
+        </div>
+      </div>
+</body>
+<script>
+  const date = new Date("Wed Nov 05 2024 21:09:30 GMT+0100 (Keski-Euroopan normaaliaika)");
+
+  const dateEl = document.getElementById("date");
+
+  dateEl.innerHTML = `Published on ${date.toLocaleDateString()} @ ${date.toLocaleTimeString()}`
+</script>
+</html>
