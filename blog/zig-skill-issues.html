@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why agile?</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="https://www.linkedin.com/in/mrj-lindemans/">
+                <i class="devicon-linkedin-plain-wordmark"></i>
+            </a>
+
+          <span style="display: flex; flex-direction: row; gap:24px;">
+            <a href="https://github.com/mikkurogue">
+                <i class="devicon-github-original-wordmark"></i>
+            </a>
+
+            <a href="/blog">
+              <i class="devicon-ie10-original"></i>
+            </a>
+         </span>
+        </nav>
+
+        <div class="content blog">
+            <img class="av"
+                src="https://avatars.githubusercontent.com/u/5637842?s=400&u=bcd6af1eb202b61177b6f64ec4ba0e01267b3519&v=4"
+                alt="Developer Avatar" />
+            <h1>Learning Zig. Do I have skill issues, or am I just bad?</h1>
+            <span id="date" class="date"></span>
+           <p id="sub-text">
+           Seeing as we are getting to the end of the year, I have taken the time to think about what I want to do
+           in the coming year to learn something new and improve at being a programmer. So, I though to myself
+           "in what way can I deliver the most amount of pain to myself?". I thought about learning 
+           <a href="https://www.rust-lang.org/">Rust</a> to a better degree but decided against that. Thought about 
+           something else, like maybe I want to look at something "older" like C++ or C. But ultimately, decided
+           "No, C++ has syntax I just dont like (what is this << >> shit man come on) and C is for the truly gifted not the grugs like me".
+           But then, on the horizon I saw something of beauty... <a href="https://ziglang.org/">Zig</a>.
+           </p>
+
+           <p id="sub-text">
+           So, I heard of Zig before and I was looking at it a few times this year. I installed it, went through the whole
+           "Hello, World!" process. Tried to figure out how to do some basic stuff like assignments, control flow etc. But ultimately 
+           packed it in when I saw "Oh I have to do memory allocation? Oh well, maybe another day.". I'm no stranger to memory allocation,
+           I started in C++ when I was but a wee lad, so I had some ideas on it. In school and college I did learn some stuff too on it, but 
+           nothing of real substance. Java and C# being the "main learning languages" for schooling is a terrible thing, and I hope that changes.
+           </p>
+
+           <p id="sub-text">
+           But last week, around Christmas time, I had this itch again to "learn". I picked myself up and said 
+           "I will learn Zig, in 2025.". Then I left it at that. Then, maybe 2 days later I was (once again) reinstalling 
+           my Linux machine after 'accidentally' breaking half of my depenencies for Steam and other tooling by casually removing 
+           all .fish files from the system indiscriminately. Apparently, I really needed those...
+           <br>
+
+           Anyhow, once reinstalled, I needed to get my whole system setup again. While installing the billion GPU driver packages,
+           radeon-profile-daemon and many other fun packages that I have since automated, I decided that I also needed to install Zig.
+           So, I did. I then picked up some stuff, I already had very (I mean, VERY) barebones limited knowledge of the syntax so I wasnt starting from 0.
+           And I decided, the best "first project" to build is a tool that can interface with my usb devices to give me the charge
+           left on my headset and mouse. Needless to say, I'll need to revisit this idea some other time. But I had a blast not knowing what to do, and I still don't.
+           </p>
+
+           <p id="sub-text">
+           But Mikku, what are these skill issues you mention? Ah yes, fair point. Well, first off memory management is still "hard" for me.
+           I did refresh my knowledge on Stack vs Heap etc. But I am still far off from giving any lectures on "Memory in CS 101".
+           However the main skill issue, isn't necessarily knowing (or not knowing) something but it's that I don't know where to begin.
+           I did find this amazing (albeit slightly outdated, but still does drive the point across VERY well) book written by Pedro Duarte Faria called
+           <a href="https://pedropark99.github.io/zig-book">Introduction to Zig</a>. I wish there were more resources like this, but I'm still looking around and will update my list
+           of resources.
+           <br>
+
+           This book now has given me the basic idea of creating some basic stuff. Like in my repo I use to write and document these excercises from the book, 
+           I have also added my own stuff and I am now working on a cool (unnecessary though) 
+           <a href="https://github.com/mikkurogue/zig-learning-projects/blob/master/zig-project3-stack-data-structure/src/array.zig#L53">
+               implementation of creating my own take on the Array data structure,
+           </a>
+           but "inspired" by the javascript way. I am having a total blast, even though this code will NEVER see the light of day, especially
+           in a real world application.
+
+           <br>
+
+           My skill issues though more importantly are the things that now will also drive me forward let me improve at being a 
+           programmer. I am very much interested in learning Zig more and more, with every passing minute spent in neovim writing Zig
+           or in repos reading Zig, or on their community discord reading about it as well. I think I may have found
+           my new favourite language (and I'm terrible at it)!
+           </p>
+
+
+           <br /> <i>std.debug.print("{s}\n", .{"skill_issue"});</i></p>
+
+        </div>
+
+           </div>
+</body>
+<script>
+  const date = new Date("Sun Dec 29 2025 17:38:30 GMT+0100 (Keski-Euroopan normaaliaika)");
+
+  const dateEl = document.getElementById("date");
+
+  dateEl.innerHTML = `Published on ${date.toLocaleDateString()} @ ${date.toLocaleTimeString()}`
+</script>
+</html>
