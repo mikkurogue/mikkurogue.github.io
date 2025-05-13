@@ -1,4 +1,4 @@
-import { Grid, Title } from "@mantine/core";
+import { Grid, Kbd, Title } from "@mantine/core";
 import ProjectCard from "./project-card";
 
 type ProjectsProps = {
@@ -8,8 +8,8 @@ type ProjectsProps = {
 export default function Projects({ projects }: ProjectsProps) {
 
     return <>
-        <Title order={2} size="h3" mt="xl" mb="md">
-            Projects
+        <Title order={2} size="h3" mt="xl" mb="md" display={"flex"} style={{ justifyContent: "space-between" }}>
+            Projects <Kbd>Ctrl + K</Kbd>
         </Title>
         <Grid gutter="md">
             {projects.map((project, i) => (
