@@ -73,7 +73,7 @@ const experiences: Experience[] = [
         company: "Inteqnion BV",
         location: "Aalten, NL",
         tech: ["csharp", "javascript"],
-        description: "Led the frontend team to migrate the application to a new version.",
+        description: "Worked with the team on the main application and providing more modern javascript practices.",
         tenure: ["01.09.2021", "01.05.2022"]
     },
     {
