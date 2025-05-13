@@ -5,7 +5,7 @@ import Skills from "@/components/skills";
 import TerminalIntro from "@/components/terminal-intro";
 import { Container, Grid, Image } from "@mantine/core";
 import { Spotlight, SpotlightActionData } from "@mantine/spotlight";
-import { IconCode, IconDashboard, IconFileText, IconHome } from "@tabler/icons-react";
+import { IconCode, IconSearch, } from "@tabler/icons-react";
 
 const projects: Project[] = [
     {
@@ -44,6 +44,30 @@ const projects: Project[] = [
         tech: ['go', 'cli'],
         repo: "https://github.com/mikkurogue/dagger"
     },
+    {
+        title: 'rerescope',
+        description: 'A terminal application bringing telescope to the terminal, not just in neovim',
+        tech: ['rust', 'cli',],
+        repo: "https://github.com/mikkurogue/rerescope"
+    },
+    {
+        title: 'mikkutable',
+        description: 'A lightweight, customizable React table based on Mantine and Tanstack for a specific data oriented design and cell manipulation table.',
+        tech: ['react', 'typescript',],
+        repo: "https://github.com/mikkurogue/mikkutable"
+    },
+    {
+        title: 'violet',
+        description: 'A minimal mode based text editor, inspired by vim & helix',
+        tech: ['rust', "cli"],
+        repo: "https://github.com/mikkurogue/violet"
+    },
+    {
+        title: 'goxl',
+        description: 'A small Go API to read an excel file and place its contents into a sqlite3 database',
+        tech: ['go', "sqlite"],
+        repo: "https://github.com/mikkurogue/goxl"
+    }
 
 ];
 
@@ -115,7 +139,7 @@ export default function HomePage() {
                         </div>                    </Grid.Col>
                 </Grid>
 
-                <Projects projects={projects} />
+                <Projects projects={projects.slice(0, 6)} />
 
                 <Skills skills={skills} />
 
@@ -123,7 +147,19 @@ export default function HomePage() {
 
             </Container>
 
-            <Spotlight shortcut={['mod + K', 'mod + P', '/']} actions={actions} />
+            <Spotlight
+                shortcut={['mod + K', 'mod + P', '/']}
+                actions={actions}
+                nothingFound="Nothing found..."
+                highlightQuery
+                scrollable
+                radius={16}
+                maxHeight={400}
+                searchProps={{
+                    leftSection: <IconSearch size={20} stroke={1.5} />,
+                    placeholder: 'Search my projects',
+                }}
+            />
         </>
     )
 }
