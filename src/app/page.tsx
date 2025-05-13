@@ -1,9 +1,11 @@
 "use client"
 import Experience from "@/components/experience";
-import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
+import TerminalIntro from "@/components/terminal-intro";
 import { Container, Grid, Image } from "@mantine/core";
+import { Spotlight, SpotlightActionData } from "@mantine/spotlight";
+import { IconCode, IconDashboard, IconFileText, IconHome } from "@tabler/icons-react";
 
 const projects: Project[] = [
     {
@@ -46,8 +48,8 @@ const projects: Project[] = [
 ];
 
 const skills: Skills = {
-    frontend: ["typescript", "react", "nextjs", "tailwind", "rust", "php"],
-    backend: ["rust", "nodejs", "deno", "bun", "docker", "graphql", "zig", "php", "go", "sqlite"],
+    frontend: ["typescript", "nextjs", "rust", "php"],
+    backend: ["rust", "nodejs", "graphql", "zig", "go", "sqlite", "postgres"],
     tools: ["git", "linux", "nushell", "neovim"],
 };
 
@@ -86,29 +88,31 @@ const experiences: Experience[] = [
     },
 ];
 
+
 export default function HomePage() {
     return (
         <>
             <Container size="lg" py="xl">
                 <Grid gutter="xl" align="center">
-                    <Grid.Col span={{ base: 12, md: 6 }}>
-                        <Intro />
+                    <Grid.Col span={{ base: 12, md: 8 }}>
+                        <TerminalIntro />
                     </Grid.Col>
 
-                    <Grid.Col span={{ base: 12, md: 6 }}>
+                    <Grid.Col span={{ base: 12, md: 4 }}>
                         <div className="halo">
-                            <Image
-                                width={250}
-                                height={250}
-                                src="https://avatars.githubusercontent.com/u/5637842?s=400&u=bcd6af1eb202b61177b6f64ec4ba0e01267b3519&v=4"
-                                alt="Profile picture of Mikkurogue"
-                                radius={"md"}
-                                fit="contain"
-                                w="100%"
-                            />
-
-                        </div>
-                    </Grid.Col>
+                            <div className="animated-image-container">
+                                <Image
+                                    className="animated-image"
+                                    width={250}
+                                    height={250}
+                                    src="https://avatars.githubusercontent.com/u/5637842?s=400&u=bcd6af1eb202b61177b6f64ec4ba0e01267b3519&v=4"
+                                    alt="Profile picture of Mikkurogue"
+                                    radius={24}
+                                    fit="contain"
+                                    w="100%"
+                                />
+                            </div>
+                        </div>                    </Grid.Col>
                 </Grid>
 
                 <Projects projects={projects} />
@@ -118,8 +122,24 @@ export default function HomePage() {
                 <Experience experiences={experiences} />
 
             </Container>
+
+            <Spotlight shortcut={['mod + K', 'mod + P', '/']} actions={actions} />
         </>
     )
 }
 
+
+// TODO: Figure out how to fetch all repos and then dynamically populate this list with those that are missing based from projects
+// array above
+const actions: SpotlightActionData[] = projects.map((project) => {
+    return {
+        id: project.title,
+        label: project.title,
+        description: project.description,
+        onClick: () => {
+            window.open(project.repo, "_blank")?.focus();
+        },
+        leftSection: <IconCode />
+    }
+})
 

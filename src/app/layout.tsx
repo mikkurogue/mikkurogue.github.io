@@ -1,5 +1,5 @@
 import "@mantine/core/styles.css";
-
+import '@mantine/spotlight/styles.css';
 import "./globals.css"
 
 import React from 'react'

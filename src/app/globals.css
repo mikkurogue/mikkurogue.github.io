@@ -24,3 +24,107 @@
   filter: brightness(1.2);
   border-radius: 8px;
 }
+
+.Typewriter__cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+.terminal-link {
+  font-family: monospace;
+  color: #00bcd4; /* Cyan-like */
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.terminal-link:hover {
+  text-decoration: underline;
+  color: #4dd0e1;
+}
+
+.animated-border-container {
+  position: relative;
+  padding: 3px; /* Adjust to control border thickness */
+  border-radius: 4px; /* Match your Card's border-radius */
+  background: linear-gradient(90deg, #1793D1, #1793D1); /* Arch Linux blue color */
+  background-size: 100% 100%;
+}
+
+/* Create the animation effect for the traveling accent */
+.animated-border-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 4px; /* Match your Card's border-radius */
+  background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255, 255, 255, 0.6), /* Lighter accent color */
+                transparent);
+  background-size: 200% 100%;
+  animation: borderTravel 2s linear infinite;
+  z-index: 0;
+}
+
+/* Animation for the border accent travel */
+@keyframes borderTravel {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Make the card appear on top of the animated border */
+.animated-card {
+  position: relative;
+  z-index: 1;
+  background-color: var(--mantine-color-dark-8);
+  margin: 0; /* Remove any margin so it fills the container */
+}
+
+/* Image border animation container */
+.animated-image-container {
+  position: relative;
+  padding: 3px; /* Adjust to control border thickness */
+  border-radius: 8px; /* Match your Image's border-radius (medium) */
+  background: linear-gradient(90deg, #1793D1, #1793D1); /* Arch Linux blue color */
+  background-size: 100% 100%;
+  width: fit-content; /* Only take up as much space as needed */
+  margin: 0 auto; /* Center horizontally if needed */
+}
+
+.animated-image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px; /* Match your Image's border-radius */
+  background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255, 255, 255, 0.6), /* Lighter accent color */
+                transparent);
+  background-size: 200% 100%;
+  animation: borderTravel 2s linear infinite;
+  z-index: 0;
+}
+
+/* Make sure the image appears on top of the animated border */
+.animated-image {
+  position: relative;
+  z-index: 1;
+  display: block; /* Ensures proper rendering */
+}
