@@ -25,6 +25,7 @@ export default function RootLayout({ children }: { children: any }) {
                     name="viewport"
                     content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
                 />
+                <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
             </head>
             <body>
                 <MantineProvider theme={theme} defaultColorScheme="dark">

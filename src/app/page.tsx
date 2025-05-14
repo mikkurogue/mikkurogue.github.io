@@ -3,7 +3,7 @@ import Experience from "@/components/experience";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 import TerminalIntro from "@/components/terminal-intro";
-import { Container, Grid, Image } from "@mantine/core";
+import { Container, Divider, Grid, Image, Title } from "@mantine/core";
 import { Spotlight, SpotlightActionData } from "@mantine/spotlight";
 import { IconCode, IconSearch, } from "@tabler/icons-react";
 
@@ -145,6 +145,17 @@ export default function HomePage() {
 
                 <Experience experiences={experiences} />
 
+                <Divider h={6} />
+
+                <Title order={4}>Wise words to learn from</Title>
+
+                <blockquote className="twitter-tweet" data-conversation="none" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">
+                    We&#39;re all retarded one way or another. <br /><br />
+                    Just acknowledge where you&#39;re retarded and either improve so you&#39;re no longer retarded, or don&#39;t act like you&#39;re not retarded.
+                </p>
+                    &mdash; Josh Manders (@joshmanders)
+                    <a href="https://twitter.com/joshmanders/status/1922747431868883100?ref_src=twsrc%5Etfw">May 14, 2025</a>
+                </blockquote>
             </Container>
 
             <Spotlight

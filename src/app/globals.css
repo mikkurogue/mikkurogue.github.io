@@ -128,3 +128,8 @@
   z-index: 1;
   display: block; /* Ensures proper rendering */
 }
+
+.twitter-tweet {
+    background: transparent !important;
+    border-radius: 8px !important;
+}
