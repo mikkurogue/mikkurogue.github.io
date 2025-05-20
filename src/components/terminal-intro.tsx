@@ -48,6 +48,10 @@ export default function TerminalIntro() {
                 <Text>Stack: <IconBrandTypescript style={iconPosition} color="#007acc" /> <IconBrandRust style={iconPosition} color="#CE422B " /> </Text>
                 <Text>Focus: Memory &amp; type safety, developer experience &amp; ergonomics</Text>
                 <Text>Location: 🇫🇮 Finland</Text>
+                <Text>Keyboard: Corne v4 custom split column staggered keyboard</Text>
+                <Text>Switches: Leobog Graywood v3</Text>
+                <Text>Mouse: Logitech MX Master 2S</Text>
+                <Text>Headset: Logitech Pro X Wireless</Text>
                 <Flex gap={6}>
                     Links:
                     <Anchor
