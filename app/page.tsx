@@ -8,22 +8,22 @@ import WiseWordsSection from './components/wise-words-section'
 import BlogSection from './components/blog-section'
 
 export default function Home() {
-  return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
-      <main className="flex-1">
-        <div className="container">
-          <div style={{ padding: '2rem 0' }}>
-            <TerminalHero />
-            <ProjectsSection />
-            <SkillsSection />
-            <ExperienceSection />
-            <WiseWordsSection />
-            <BlogSection />
-          </div>
+    return (
+        <div className="min-h-screen flex flex-col">
+            <Header />
+            <main className="flex-1">
+                <div className="container">
+                    <div style={{ padding: '2rem 0' }}>
+                        <TerminalHero />
+                        <ProjectsSection />
+                        <SkillsSection />
+                        <ExperienceSection />
+                        <WiseWordsSection />
+                        {/* <BlogSection /> */}
+                    </div>
+                </div>
+            </main>
+            <Footer />
         </div>
-      </main>
-      <Footer />
-    </div>
-  )
+    )
 }
