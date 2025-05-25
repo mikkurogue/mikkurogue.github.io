@@ -7,13 +7,13 @@ const projects = [
 		description:
 			"A small task runner/build tool to help chain some commands together in projects.",
 		tags: ["rust", "arch", "cli"],
-		url: "https://github.com/mikkurogue/taskr",
+		url: "/projects/taskr",
 	},
 	{
 		id: "cube-type-extract-rs",
 		name: "cube-type-extract-rs",
 		description:
-			"A tool that extracts and generates TypeScript types from Cube.js schema files, for seamless type-safe integration between Cube.js and TypeScript applications.",
+			"A tool that generates TypeScript types from Cube.js metadata, for an easier intergration between Cube.js and TypeScript applications.",
 		tags: ["rust", "typescript", "cli"],
 		url: "https://github.com/mikkurogue/cube-type-extract-rs",
 	},

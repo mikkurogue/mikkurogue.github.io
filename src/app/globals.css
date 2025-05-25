@@ -122,18 +122,7 @@ a {
 
 .section-title {
 	font-size: 1.5rem;
-	font-weight: 600;
-	color: var(--text-primary);
-	border-bottom: 2px solid var(--accent-bright);
-	padding-bottom: 0.5rem;
-	display: inline-block;
-	margin-bottom: 1.5rem;
-}
-
-.section-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	font-weight: 600rem;
 	margin-bottom: 1.5rem;
 }
 
@@ -144,6 +133,7 @@ a {
 
 /* Cards */
 .card {
+	height: 100%;
 	background-color: var(--bg-secondary);
 	border: 1px solid var(--border);
 	border-radius: 8px;
@@ -284,6 +274,9 @@ a {
 
 /* Footer */
 .footer {
+	position: static;
+	bottom: 0;
+	width: 100%;
 	background-color: var(--bg-secondary);
 	border-top: 1px solid var(--border);
 	margin-top: 4rem;
@@ -440,4 +433,19 @@ a {
 	.grid-cols-3 {
 		grid-template-columns: repeat(3, 1fr);
 	}
+}
+
+.project-hero p {
+	color: #cccccc;
+}
+
+.project-details h2 {
+	margin-top: 2rem;
+	padding-bottom: 0.5rem;
+}
+
+.project-details ul {
+	list-style: disc inside;
+	margin: 1rem 0;
+	padding-left: 1rem;
 }

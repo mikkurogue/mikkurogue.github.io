@@ -11,8 +11,10 @@ type Project = {
 };
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+	const target = project.url.includes("https") ? "_blank" : undefined;
+
 	return (
-		<a key={project.id} href={project.url} rel="noreferrer" target="_blank">
+		<a key={project.id} href={project.url} rel="noreferrer" target={target}>
 			<div className="card">
 				<h3
 					style={{
