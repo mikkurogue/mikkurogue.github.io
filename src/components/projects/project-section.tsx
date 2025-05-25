@@ -1,6 +1,6 @@
-import ProjectCard from "./project-card";
+import ProjectCard, { type Project } from "./project-card";
 
-const projects = [
+const projects: Project[] = [
 	{
 		id: "taskr",
 		name: "taskr",
@@ -8,6 +8,7 @@ const projects = [
 			"A small task runner/build tool to help chain some commands together in projects.",
 		tags: ["rust", "arch", "cli"],
 		url: "/projects/taskr",
+		active: true,
 	},
 	{
 		id: "cube-type-extract-rs",
@@ -16,6 +17,7 @@ const projects = [
 			"A tool that generates TypeScript types from Cube.js metadata, for an easier intergration between Cube.js and TypeScript applications.",
 		tags: ["rust", "typescript", "cli"],
 		url: "https://github.com/mikkurogue/cube-type-extract-rs",
+		active: true,
 	},
 	{
 		id: "zigsh",

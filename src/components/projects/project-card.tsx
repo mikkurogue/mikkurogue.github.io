@@ -1,17 +1,21 @@
+import Badge from "../badge";
+
 type ProjectCardProps = {
 	project: Project;
 };
 
-type Project = {
+export type Project = {
 	id: string;
 	name: string;
 	description: string;
 	tags: string[];
 	url: string;
+	active?: boolean;
 };
 
 export default function ProjectCard({ project }: ProjectCardProps) {
 	const target = project.url.includes("https") ? "_blank" : undefined;
+	const active = project.active ? "active" : "inactive";
 
 	return (
 		<a key={project.id} href={project.url} rel="noreferrer" target={target}>
@@ -22,9 +26,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 						fontWeight: "600",
 						color: "var(--text-primary)",
 						marginBottom: "0.75rem",
+						display: "flex",
+						justifyContent: "space-between",
 					}}
 				>
 					{project.name}
+					<Badge variant={active}>{active}</Badge>
 				</h3>
 				<p
 					style={{

@@ -174,6 +174,16 @@ a {
 	margin: 0.125rem;
 }
 
+.tag.active {
+	border-color: #339933;
+	color: #339933;
+}
+
+.tag.inactive {
+	border-color: var(--accent-bright);
+	color: var(--accent-bright);
+}
+
 .tag.rust {
 	border-color: #ce422b;
 	color: #ce422b;
@@ -448,4 +458,20 @@ a {
 	list-style: disc inside;
 	margin: 1rem 0;
 	padding-left: 1rem;
+}
+
+.badge {
+	display: inline-block;
+	padding: 0.25em 0.75em;
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: #ffffff;
+	background-color: #1e90ff;
+	border-radius: 9999px;
+	margin: 0.25em;
+	transition: background-color 0.3s ease;
+}
+
+.badge:hover {
+	background-color: #1c86ee;
 }
