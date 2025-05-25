@@ -28,6 +28,10 @@ body {
 	min-height: 100vh;
 }
 
+a {
+	text-decoration: none;
+}
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -148,7 +152,6 @@ body {
 }
 
 .card:hover {
-	cursor: default;
 	border-color: var(--accent-bright);
 	box-shadow: 0 4px 20px rgba(156, 163, 175, 0.1);
 	transform: translateY(-2px);
