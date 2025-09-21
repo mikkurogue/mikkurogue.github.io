@@ -1,6 +1,14 @@
 import ProjectCard, { type Project } from "./project-card";
 
 const projects: Project[] = [
+    {
+        id: "xcsv",
+        name: "xcsv",
+        description: "A fast, lightweight and effecient excel to csv conversion tool. Ideal for large excel sheets and cheap to run due to low memory overhead. Both input and output is streamed for a seamless, low footprint experience.",
+        tags: ["rust", "cli"],
+        active: true,
+        url: "https://mikkurogue.github.io/xcsv/" 
+    },
 	{
 		id: "taskr",
 		name: "taskr",
@@ -8,7 +16,6 @@ const projects: Project[] = [
 			"A small task runner/build tool to help chain some commands together in projects.",
 		tags: ["rust", "arch", "cli"],
 		url: "/projects/taskr",
-		active: true,
 	},
 	{
 		id: "cube-type-extract-rs",
