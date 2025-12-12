@@ -1,8 +1,9 @@
+import { Metadata } from "next";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import "./globals.css";
 
-export const metadata = {
+export const metadata: Metadata = {
 	title: "Mikku - Developer Portfolio",
 	description:
 		"Full-stack developer specializing in Rust, TypeScript, and modern web technologies",

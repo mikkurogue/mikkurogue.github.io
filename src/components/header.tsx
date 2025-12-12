@@ -23,6 +23,11 @@ export default function Header() {
 								Experience
 							</a>
 						</li>
+						<li>
+							<a href="#" className="nav-link">
+								Blog (Coming Soon)
+							</a>
+						</li>
 					</ul>
 				</nav>
 			</div>

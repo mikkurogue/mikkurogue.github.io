@@ -1,70 +1,31 @@
 import ProjectCard, { type Project } from "./project-card";
 
 const projects: Project[] = [
-    {
-        id: "xcsv",
-        name: "xcsv",
-        description: "A fast, lightweight and effecient excel to csv conversion tool. Ideal for large excel sheets and cheap to run due to low memory overhead. Both input and output is streamed for a seamless, low footprint experience.",
-        tags: ["rust", "cli"],
-        active: true,
-        url: "https://mikkurogue.github.io/xcsv/" 
-    },
 	{
-		id: "taskr",
-		name: "taskr",
-		description:
-			"A small task runner/build tool to help chain some commands together in projects.",
-		tags: ["rust", "arch", "cli"],
-		url: "/projects/taskr",
-	},
-	{
-		id: "cube-type-extract-rs",
-		name: "cube-type-extract-rs",
-		description:
-			"A tool that generates TypeScript types from Cube.js metadata, for an easier intergration between Cube.js and TypeScript applications.",
-		tags: ["rust", "typescript", "cli"],
-		url: "https://github.com/mikkurogue/cube-type-extract-rs",
+		id: "ts-analyzer",
+		name: "ts-analyzer",
+		description: `
+      A lightweight TypeScrippt static analysis tool to read and translate TS errors into an actionable and helpful format.
+      Built with Rust, and provides multiple modes for usage; one as a CLI tool and another as a neovim plugin to intercept LSP diagnostics and enhance them on the fly.`,
+		tags: ["typescript", "rust", "lua", "nvim", "cli", "static-analysis"],
 		active: true,
+		url: "https://github.com/mikkurogue/ts-analyzer",
+		docUrl: "https://github.com/mikkurogue/ts-analyzer/tree/master/lua",
+		docButtonText: "View Neovim plugin",
 	},
 	{
-		id: "zigsh",
-		name: "zigsh",
-		description:
-			"A minimal shell implemented in Zig, created as a learning project to explore shell development and the Zig programming language.",
-		tags: ["zig", "cli"],
-		url: "https://github.com/mikkurogue/zigsh",
-	},
-	{
-		id: "rmv",
-		name: "rmv",
-		description:
-			"A CLI tool designed to streamline the removal of files or directories with enhanced safety checks and user confirmations.",
+		id: "xcsv",
+		name: "xcsv",
+		description: `A fast, lightweight and effecient excel to csv conversion tool.
+      Ideal for large excel sheets and cheap to run due to low memory overhead.
+      Both input and output is streamed for a seamless, low footprint experience.
+      Eliminates the need for heavy memory consumption by using streaming and effecient xml parsing.
+      Provides an installable binary,available as a library for easy integration.`,
 		tags: ["rust", "cli"],
-		url: "https://github.com/mikkurogue/rmv",
-	},
-	{
-		id: "tta",
-		name: "tta",
-		description:
-			"A Rust-based tool that analyzes TypeScript projects to identify and list duplicated type definitions, aiding in codebase maintenance.",
-		tags: ["rust", "typescript", "cli"],
-		url: "https://github.com/mikkurogue/tta",
-	},
-	{
-		id: "libarr",
-		name: "libarr",
-		description:
-			"An experimental Zig library exploring array utilities, created as a learning project to delve into Zig's capabilities.",
-		tags: ["zig"],
-		url: "https://github.com/mikkurogue/libarr",
-	},
-	{
-		id: "dagger",
-		name: "dagger",
-		description:
-			"A Go-based CLI tool that assists in setting up developer environments by automating the installation of essential tools and editors.",
-		tags: ["go", "cli"],
-		url: "https://github.com/mikkurogue/dagger",
+		active: true,
+		url: "https://mikkurogue.github.io/xcsv/",
+		docUrl: "https://crates.io/crates/libxcsv",
+		docButtonText: "View docs on crates.io",
 	},
 ];
 

@@ -5,11 +5,11 @@ import { match } from "ts-pattern";
 
 const personalInfo = {
 	name: "Mikku",
-	location: "🇫🇮 Finland",
+	location: "Finland",
 	focus: "Memory & type safety, developer experience & ergonomics",
-	stack: ["Rust", "TypeScript", "Zig"],
-	keyboard: "Corne v4 custom split column staggered keyboard",
-	switches: "Leobog Graywood v3",
+	stack: ["Rust", "TypeScript"],
+	keyboard: "BCorne 58 Split ",
+	switches: "Outem Silent Peach",
 	mouse: "Logitech MX Master 2S",
 	headset: "Logitech Pro X Wireless",
 	links: {
@@ -69,7 +69,6 @@ export default function TerminalHero() {
 									href={match(tech)
 										.with("Rust", () => "https://www.rust-lang.org")
 										.with("TypeScript", () => "https://www.typescriptlang.org")
-										.with("Zig", () => "https://www.ziglang.org")
 										.otherwise(() => "#")}
 									target="_blank"
 									rel="noopener noreferrer"
@@ -104,7 +103,7 @@ export default function TerminalHero() {
 					<br />
 
 					<div>
-						<strong>Links:</strong>
+						<strong>Links: </strong>
 						<a
 							href={personalInfo.links.linkedin}
 							target="_blank"

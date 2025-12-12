@@ -188,6 +188,22 @@ a {
 	border-color: #ce422b;
 	color: #ce422b;
 }
+.tag.lua {
+	border-color: #00f0ff;
+	color: #00f0ff;
+}
+.tag.nvim {
+	border-color: #019833;
+	color: #019833;
+}
+.tag.static-analysis {
+	border-color: #ff6600;
+	color: #ff6600;
+}
+.tag.cli {
+	border-color: #ff6688;
+	color: #ff6688;
+}
 .tag.typescript {
 	border-color: #3178c6;
 	color: #3178c6;
@@ -200,10 +216,7 @@ a {
 	border-color: #00add8;
 	color: #00add8;
 }
-.tag.cli {
-	border-color: var(--accent-bright);
-	color: var(--accent-bright);
-}
+
 .tag.nextjs {
 	border-color: #ffffff;
 	color: #ffffff;
