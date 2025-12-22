@@ -3,7 +3,7 @@ const experiences = [
 		id: "bigmile",
 		company: "BigMile",
 		position: "Fullstack Engineer",
-		location: "Maarssen, NL",
+		location: "Vantaa, Fi (Remote)",
 		period: "01.06.2022 - Present",
 		description:
 			"Building upon all factors of the Carbon Analytics platform whilst also enabling technical growth and innovation.",
