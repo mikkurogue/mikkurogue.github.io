@@ -7,7 +7,16 @@ const experiences = [
 		period: "01.06.2022 - Present",
 		description:
 			"Building upon all factors of the Carbon Analytics platform whilst also enabling technical growth and innovation.",
-		tags: ["typescript", "nextjs", "rust", "postgres", "nestjs", "graphql"],
+		tags: [
+			"typescript",
+			"nextjs",
+			"rust",
+			"postgres",
+			"nestjs",
+			"graphql",
+			"jj",
+			"git",
+		],
 	},
 	{
 		id: "enelogic",
@@ -17,7 +26,7 @@ const experiences = [
 		period: "01.09.2021 - 01.05.2022",
 		description:
 			"Led the frontend team to migrate the application to a new version.",
-		tags: ["nextjs", "php", "graphql"],
+		tags: ["nextjs", "php", "graphql", "git"],
 	},
 	{
 		id: "inteqnion",
@@ -27,7 +36,7 @@ const experiences = [
 		period: "01.09.2021 - 01.05.2022",
 		description:
 			"Worked with the team on the main application and providing more modern javascript practices.",
-		tags: ["csharp", "javascript"],
+		tags: ["csharp", "javascript", "git"],
 	},
 	{
 		id: "mrj-software",
@@ -36,7 +45,7 @@ const experiences = [
 		location: "Remote",
 		period: "01.10.2018 - 01.08.2020",
 		description: "My own consulting and software house.",
-		tags: ["typescript", "php", "csharp"],
+		tags: ["typescript", "php", "csharp", "c", "cpp", "git"],
 	},
 ];
 
@@ -107,4 +116,3 @@ export default function ExperienceSection() {
 		</section>
 	);
 }
-

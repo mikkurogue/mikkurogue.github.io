@@ -183,6 +183,14 @@ a {
 	border-color: var(--accent-bright);
 	color: var(--accent-bright);
 }
+.tag.git {
+	border-color: #f1502f;
+	color: #f1502f;
+}
+.tag.jj {
+	border-color: #f36c21;
+	color: #f36c21;
+}
 
 .tag.rust {
 	border-color: #ce422b;

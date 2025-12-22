@@ -5,9 +5,18 @@ const projects: Project[] = [
 		id: "ts-analyzer",
 		name: "ts-analyzer",
 		description: `
-      A lightweight TypeScrippt static analysis tool to read and translate TS errors into an actionable and helpful format.
+      A lightweight TypeScript static analysis tool to read and translate TS errors into an actionable and helpful format.
       Built with Rust, and provides multiple modes for usage; one as a CLI tool and another as a neovim plugin to intercept LSP diagnostics and enhance them on the fly.`,
-		tags: ["typescript", "rust", "lua", "nvim", "cli", "static-analysis"],
+		tags: [
+			"jj",
+			"git",
+			"typescript",
+			"rust",
+			"lua",
+			"nvim",
+			"cli",
+			"static-analysis",
+		],
 		active: true,
 		url: "https://github.com/mikkurogue/ts-analyzer",
 		docUrl: "https://github.com/mikkurogue/ts-analyzer/tree/master/lua",
@@ -21,11 +30,11 @@ const projects: Project[] = [
       Both input and output is streamed for a seamless, low footprint experience.
       Eliminates the need for heavy memory consumption by using streaming and effecient xml parsing.
       Provides an installable binary,available as a library for easy integration.`,
-		tags: ["rust", "cli"],
+		tags: ["rust", "cli", "jj", "git"],
 		active: true,
 		url: "https://mikkurogue.github.io/xcsv/",
-		docUrl: "https://crates.io/crates/libxcsv",
-		docButtonText: "View docs on crates.io",
+		docUrl: "https://docs.rs/libxcsv/latest/libxcsv/",
+		docButtonText: "View docs on docs.rs",
 	},
 ];
 
