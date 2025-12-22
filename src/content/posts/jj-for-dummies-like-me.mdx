@@ -1,0 +1,123 @@
+---
+title: "JJ for Dummies Like Me"
+date: "2025-12-22"
+author: "Mikkurogue"
+description: "A beginner's guide to using JJ version control"
+tags: ["git", "jj", "tutorial"]
+---
+
+## Introduction
+
+JJ is a modern version control system that's gaining popularity. Recently, I decided to give it a more serious try,
+after reading propaganda about it on Xitter. Notably from [@mitchellh](https://x.com/mitchellh) and even that weird colorsphere [@hsvsphere](https://x.com/hsvsphere) (turkey mentioned).
+
+Admitedly, I have tried `jj` before but I didn't understand it because I am a certified moron, but for some reason I thought "I need to try this, git is boring me."
+
+I have a decent understanding of `git` and my workflow is pretty optimized with tons of aliases for the commands I use the most. Most notably I have `git purge` which is just an alias to delete all local branches that have been merged and deleted upstream. 
+And, I made the alias `git undo` which is just a command to reset the last commit but keep the changes in the working directory. (Made, more like STOLEN from [@joshmanders](https://x.com/joshmanders)).
+
+## Getting Started
+So, I'll give you the quick dummy rundown of how to get started with `jj`. I am going to make the assumption that you do know how to use the interwebs to find installation guides so I wont provide them all.
+
+So, I installed `jj` via `cargo`, because I write Rust and I needed to have a relatively simple way to install jj on both my Linux personal machine and my works Macbook Pro.
+```bash
+cargo binstall --strategies crate-meta-data jj-cli
+```
+
+After installation, I went ahead and also installed the `jj-starship` prompt integration, written by [@dillon_mulroy](https://x.com/dillon_mulroy). This is optional, but I like having my prompt show the current branch and status of the repository I am in.
+
+```bash
+cargo install jj-starship
+```
+
+This is optional I recommend going to the [jj-starship GitHub page](https://github.com/dmmulroy/jj-starship) for everything else. (Thanks Dillon for making this, it's awesome, and a special thanks for your starship.toml so I can intergrate it to my own config).
+
+## Repo setup 
+
+Now that we have `jj` installed, let's do some simple stuff. First, let's not do what everyone else does and create a new repository. Instead, just go to an existing one on your machine. For me it's my [rmv repo](https://github.com/mikkurogue/rmv).
+
+Now, let's assume you have this repo already cloned with `git`. Just go into the directory and run:
+
+```bash
+jj git init .
+```
+This will initialize a `jj` repository in the current directory. You'll also see a message akin to "Track the branch with jj".
+
+So, easy as pie we can run 
+```bash
+jj bookmark track master@origin
+```
+This will track the `master` branch from the `origin` remote. Now you can use `jj` commands to interact with this repository.
+
+## Basic Commands
+
+Boring shit done, let's think about making a change. So lets start with making a bookmark to work on with
+```bash
+# make a new working copy on the current bookmark, in this case master
+jj new master
+# now make a new bookmark, and change to it thats based off the current commit (the one `master` is set from)
+jj new -b my-change
+```
+
+Super cool stuff. Time to open your favorite editor (neovim, btw) and then lets do something crazy and change whatever file you want.
+Once you are done with editing the file run the command
+```bash
+jj status # or jj st
+```
+And you'll see a message that says what files have been changed. I wont go into details with using jj split or anything like that, I'm too stupid to understand it at this point and I wont be able to expain it.
+
+So now, let's make a commit. You have 2 options basically.
+```bash
+jj describe -m "My cool commit message"
+```
+This will just describe the commit, but wont make a new "commit" or revision to work off of, you then would do
+```bash
+jj new my-change
+```
+
+However you can also combine these into 
+```bash
+jj commit -m "My cool commit message"
+```
+This will both describe the commit and make a new revision to work off of. If you run `jj log` you'll see your commit in the history.
+Now, let's say you want to push your changes back to the remote repository. You can do this with:
+```bash
+jj git push -b my-change
+```
+This will push your `my-change` bookmark to the remote repository, and thats that. You're done.
+
+Now a quick note, if you want to go back to the `master` bookmark you can just run
+```bash
+jj new master
+```
+This will switch you back to the `master` bookmark. And then to sync from the origin you can run
+```bash
+jj rebase -d master@origin
+```
+
+Also, branches and bookmarks are not necessarily the same thing. To a degree they are, but as bookmarks can be moved around more freely they offer more flexibility.
+Essentially, a bookmark is just a pointer to a commit at some point in time meaning whenever you run the command
+```bash
+jj new master # assuming master is a bookmark 
+```
+You essentially move the bookmark of master to the current working copy/commit you are running the command on.
+
+I might be wrong, but this is at least how I have come to understand it.
+
+## Conclusion
+
+JJ is a powerful and relatively simple tool for version control. It's nice that it's git compatible, so after a few days at work using it I don't feel like I'm mangling the history (actually the history looks so much nicer now for me, other than the merge commits from PR's they suck).
+
+I do think jj has a lot of potential, and I am exicted to see where it will go in the future. I've seen of some speak of a jj forge, which would be a cool way to host jj repositories similar to GitHub. Hopefully, it will be a good experience as github now is well... an anemic dying husk of what microsoft has done to it.
+The incessant copilot intergration and kind of bad performence, alongside the "amazing" PR it's gotten lately it's just sad to see.
+
+None the less, jj is cool.
+
+Happy jj-ing, and let's see if I can provide more content about it in the future as I learn more about it myself.
+
+---
+*Disclaimer: I am not affiliated with the JJ project or its maintainers. This post is based on my personal experience and opinions.*
+
+
+
+

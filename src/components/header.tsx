@@ -24,8 +24,8 @@ export default function Header() {
 							</a>
 						</li>
 						<li>
-							<a href="#" className="nav-link">
-								Blog (Coming Soon)
+							<a href="/blog" className="nav-link">
+								Blog
 							</a>
 						</li>
 					</ul>

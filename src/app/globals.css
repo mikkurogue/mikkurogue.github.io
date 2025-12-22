@@ -17,6 +17,8 @@
 	--accent-bright: #9ca3af;
 	--border: #404040;
 	--border-bright: #525252;
+	--blog-link: #3b82f6;
+	--blog-link-hover: #2563eb;
 }
 
 body {
@@ -422,6 +424,16 @@ a {
 
 .tweet-link:hover {
 	color: var(--accent-bright);
+}
+
+.blog-link {
+	color: var(--blog-link);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.blog-link:hover {
+	color: var(--blog-link-hover);
 }
 
 /* Responsive */
