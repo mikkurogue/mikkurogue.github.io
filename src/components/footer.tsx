@@ -27,7 +27,7 @@ export default function Footer() {
 					{/* </a> */}
 				</div>
 				<p className="footer-text">
-					&copy; 2025 Mikku made with love in Finland.
+					&copy; {new Date().getFullYear()} Mikku made with love in Finland.
 				</p>
 			</div>
 		</footer>
