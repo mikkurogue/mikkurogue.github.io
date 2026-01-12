@@ -214,6 +214,10 @@ a {
 	border-color: #ff6688;
 	color: #ff6688;
 }
+.tag.tui {
+	border-color: #884dff;
+	color: #884dff;
+}
 .tag.typescript {
 	border-color: #3178c6;
 	color: #3178c6;
