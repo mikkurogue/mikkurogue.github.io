@@ -7,18 +7,19 @@
 }
 
 :root {
-	--bg-primary: #0a0a0a;
-	--bg-secondary: #1a1a1a;
-	--bg-tertiary: #2a2a2a;
-	--text-primary: #f0f0f0;
-	--text-secondary: #a3a3a3;
-	--text-muted: #737373;
-	--accent: #6b7280;
-	--accent-bright: #9ca3af;
-	--border: #404040;
-	--border-bright: #525252;
-	--blog-link: #3b82f6;
-	--blog-link-hover: #2563eb;
+	/* Catppuccin Mocha Theme */
+	--bg-primary: #1e1e2e; /* Base */
+	--bg-secondary: #181825; /* Mantle */
+	--bg-tertiary: #313244; /* Surface0 */
+	--text-primary: #cdd6f4; /* Text */
+	--text-secondary: #bac2de; /* Subtext1 */
+	--text-muted: #a6adc8; /* Subtext0 */
+	--accent: #89b4fa; /* Blue */
+	--accent-bright: #b4befe; /* Lavender */
+	--border: #45475a; /* Surface1 */
+	--border-bright: #585b70; /* Surface2 */
+	--blog-link: #89b4fa; /* Blue */
+	--blog-link-hover: #74c7ec; /* Sapphire */
 }
 
 body {
@@ -70,13 +71,13 @@ a {
 }
 
 .control-close {
-	background-color: #ff5f56;
+	background-color: #f38ba8; /* Red */
 }
 .control-minimize {
-	background-color: #ffbd2e;
+	background-color: #f9e2af; /* Yellow */
 }
 .control-maximize {
-	background-color: #27ca3f;
+	background-color: #a6e3a1; /* Green */
 }
 
 .terminal-title {
@@ -145,7 +146,7 @@ a {
 
 .card:hover {
 	border-color: var(--accent-bright);
-	box-shadow: 0 4px 20px rgba(156, 163, 175, 0.1);
+	box-shadow: 0 4px 20px rgba(180, 190, 254, 0.1); /* Lavender with alpha */
 	transform: translateY(-2px);
 }
 
@@ -177,8 +178,8 @@ a {
 }
 
 .tag.active {
-	border-color: #339933;
-	color: #339933;
+	border-color: #a6e3a1; /* Green */
+	color: #a6e3a1;
 }
 
 .tag.inactive {
@@ -186,82 +187,82 @@ a {
 	color: var(--accent-bright);
 }
 .tag.git {
-	border-color: #f1502f;
-	color: #f1502f;
+	border-color: #f38ba8; /* Red */
+	color: #f38ba8;
 }
 .tag.jj {
-	border-color: #f36c21;
-	color: #f36c21;
+	border-color: #fab387; /* Peach */
+	color: #fab387;
 }
 
 .tag.rust {
-	border-color: #ce422b;
-	color: #ce422b;
+	border-color: #f38ba8; /* Red */
+	color: #f38ba8;
 }
 .tag.lua {
-	border-color: #00f0ff;
-	color: #00f0ff;
+	border-color: #89dceb; /* Sky */
+	color: #89dceb;
 }
 .tag.nvim {
-	border-color: #019833;
-	color: #019833;
+	border-color: #a6e3a1; /* Green */
+	color: #a6e3a1;
 }
 .tag.static-analysis {
-	border-color: #ff6600;
-	color: #ff6600;
+	border-color: #fab387; /* Peach */
+	color: #fab387;
 }
 .tag.cli {
-	border-color: #ff6688;
-	color: #ff6688;
+	border-color: #f5c2e7; /* Pink */
+	color: #f5c2e7;
 }
 .tag.tui {
-	border-color: #884dff;
-	color: #884dff;
+	border-color: #cba6f7; /* Mauve */
+	color: #cba6f7;
 }
 .tag.typescript {
-	border-color: #3178c6;
-	color: #3178c6;
+	border-color: #89b4fa; /* Blue */
+	color: #89b4fa;
 }
 .tag.zig {
-	border-color: #f7a41d;
-	color: #f7a41d;
+	border-color: #f9e2af; /* Yellow */
+	color: #f9e2af;
 }
 .tag.go {
-	border-color: #00add8;
-	color: #00add8;
+	border-color: #89dceb; /* Sky */
+	color: #89dceb;
 }
 
 .tag.nextjs {
-	border-color: #ffffff;
-	color: #ffffff;
+	border-color: #cdd6f4; /* Text */
+	color: #cdd6f4;
 }
 .tag.nodejs {
-	border-color: #339933;
-	color: #339933;
+	border-color: #a6e3a1; /* Green */
+	color: #a6e3a1;
 }
 .tag.graphql {
-	border-color: #e10098;
-	color: #e10098;
+	border-color: #f5c2e7; /* Pink */
+	color: #f5c2e7;
 }
 .tag.postgres {
-	border-color: #336791;
-	color: #336791;
+	border-color: #89b4fa; /* Blue */
+	color: #89b4fa;
 }
 .tag.nestjs {
-	border-color: #e0234e;
-	color: #e0234e;
+	border-color: #eba0ac; /* Maroon */
+	color: #eba0ac;
 }
 .tag.php {
-	border-color: #777bb4;
-	color: #777bb4;
+	border-color: #b4befe; /* Lavender */
+	color: #b4befe;
 }
 .tag.javascript {
-	border-color: #f7df1e;
-	color: #f7df1e;
+	border-color: #f9e2af; /* Yellow */
+	color: #f9e2af;
 }
 .tag.csharp {
-	border-color: #239120;
-	color: #239120;
+	border-color: #a6e3a1; /* Green */
+	color: #a6e3a1;
 }
 
 /* Header */
@@ -483,7 +484,7 @@ a {
 }
 
 .project-hero p {
-	color: #cccccc;
+	color: #bac2de; /* Subtext1 */
 }
 
 .project-details h2 {
@@ -502,13 +503,13 @@ a {
 	padding: 0.25em 0.75em;
 	font-size: 0.875rem;
 	font-weight: 500;
-	color: #ffffff;
-	background-color: #1e90ff;
+	color: #cdd6f4; /* Text */
+	background-color: #89b4fa; /* Blue */
 	border-radius: 9999px;
 	margin: 0.25em;
 	transition: background-color 0.3s ease;
 }
 
 .badge:hover {
-	background-color: #1c86ee;
+	background-color: #74c7ec; /* Sapphire */
 }

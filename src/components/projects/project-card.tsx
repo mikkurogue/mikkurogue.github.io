@@ -76,27 +76,27 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 								fontSize: "0.8rem",
 								padding: "4px 10px",
 								borderRadius: "3px",
-								border: "1px solid #5f5f5f",
-								background: "#1c1c1c",
-								color: "#23ff7e",
+								border: "1px solid #45475a" /* Surface1 */,
+								background: "#181825" /* Mantle */,
+								color: "#a6e3a1" /* Green */,
 								cursor: "pointer",
-								boxShadow: "0 0 0 1px #000 inset",
+								boxShadow: "0 0 0 1px #11111b inset" /* Crust */,
 								transition: "all 0.1s ease-in-out",
 							}}
 							onMouseEnter={(e) => {
-								e.currentTarget.style.background = "#333";
-								e.currentTarget.style.borderColor = "#8f8f8f";
+								e.currentTarget.style.background = "#313244"; /* Surface0 */
+								e.currentTarget.style.borderColor = "#585b70"; /* Surface2 */
 							}}
 							onMouseLeave={(e) => {
-								e.currentTarget.style.background = "#1c1c1c";
-								e.currentTarget.style.borderColor = "#5f5f5f";
+								e.currentTarget.style.background = "#181825"; /* Mantle */
+								e.currentTarget.style.borderColor = "#45475a"; /* Surface1 */
 							}}
 							onMouseDown={(e) => {
-								e.currentTarget.style.background = "#000";
+								e.currentTarget.style.background = "#11111b"; /* Crust */
 								e.currentTarget.style.transform = "translateY(1px)";
 							}}
 							onMouseUp={(e) => {
-								e.currentTarget.style.background = "#333";
+								e.currentTarget.style.background = "#313244"; /* Surface0 */
 								e.currentTarget.style.transform = "translateY(0)";
 							}}
 						>
