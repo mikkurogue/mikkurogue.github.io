@@ -142,12 +142,12 @@ a {
 	border-radius: 8px;
 	padding: 1.5rem;
 	transition: all 0.3s ease;
-}
-
-.card:hover {
-	border-color: var(--accent-bright);
-	box-shadow: 0 4px 20px rgba(180, 190, 254, 0.1); /* Lavender with alpha */
-	transform: translateY(-2px);
+	&:hover {
+		border-color: var(--accent-bright);
+		box-shadow: 0 4px 20px rgba(180, 190, 254, 0.1); /* Lavender with alpha */
+		transform: translateY(-2px);
+		animation: pulse 1s infinite;
+	}
 }
 
 .grid {
@@ -175,6 +175,22 @@ a {
 	border: 1px solid var(--border);
 	display: inline-block;
 	margin: 0.125rem;
+
+	&:hover {
+		animation: pulse 1s infinite;
+	}
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(180, 190, 254, 0.4);
+	}
+	70% {
+		box-shadow: 0 0 0 10px rgba(180, 190, 254, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(180, 190, 254, 0);
+	}
 }
 
 .tag.active {
@@ -351,11 +367,11 @@ a {
 	border-radius: 8px;
 	object-fit: cover;
 	transition: all 0.3s ease-in-out;
-}
-
-.profile-image:hover {
-	transform: translateY(-2px);
-	border: 2px solid var(--accent-bright);
+	&:hover {
+		border: 1px solid var(--accent-bright);
+		transform: translateY(-2px);
+		animation: pulse 1s infinite;
+	}
 }
 
 /* Tweet Styles */
@@ -468,6 +484,9 @@ a {
 	.profile-image {
 		width: 96px;
 		height: 96px;
+		&:hover {
+			animation: pulse 1s infinite;
+		}
 	}
 }
 
