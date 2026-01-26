@@ -8,6 +8,7 @@ const projects: Project[] = [
 A lightweight daemon for niri to setup keyboard layout detection for multi layout and multi keyboard users on the niri compositor`,
 		tags: ["rust", "daemon", "linux"],
 		url: "https://github.com/mikkurogue/kunai",
+		active: true,
 	},
 	{
 		id: "jjkk",
