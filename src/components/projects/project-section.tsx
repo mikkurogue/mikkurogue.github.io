@@ -2,6 +2,14 @@ import ProjectCard, { type Project } from "./project-card";
 
 const projects: Project[] = [
 	{
+		id: "kunai",
+		name: "Kunai",
+		description: `
+A lightweight daemon for niri to setup keyboard layout detection for multi layout and multi keyboard users on the niri compositor`,
+		tags: ["rust", "daemon", "linux"],
+		url: "https://github.com/mikkurogue/kunai",
+	},
+	{
 		id: "jjkk",
 		name: "jjkk",
 		description: `A minimalistic jj vcs tui tool, akin to lazygit. Simplifies interaction with jj with the bare utilities needed to interact with a jj repository, without having to learn the entire cli.
