@@ -1,0 +1,169 @@
+/* The idea is to move these to css modules or something */
+.tui-loader {
+	font-size: 48px;
+	font-family: monospace;
+	color: #fff;
+	line-height: 1;
+	display: inline-block;
+}
+
+.tui-loader::before {
+	content: "⣾";
+	animation: tui-braille-spin 0.8s steps(8) infinite;
+}
+
+@keyframes tui-braille-spin {
+	0% {
+		content: "⣾";
+	}
+	12.5% {
+		content: "⣽";
+	}
+	25% {
+		content: "⣻";
+	}
+	37.5% {
+		content: "⢿";
+	}
+	50% {
+		content: "⡿";
+	}
+	62.5% {
+		content: "⣟";
+	}
+	75% {
+		content: "⣯";
+	}
+	87.5% {
+		content: "⣷";
+	}
+	100% {
+		content: "⣾";
+	}
+}
+
+/* ["⠋" "⠙" "⠹" "⠸" "⠼" "⠴" "⠦" "⠧" "⠇" "⠏"] */
+.tui-loader-mini {
+	font-size: 48px;
+	font-family: monospace;
+	color: #fff;
+	line-height: 1;
+	display: inline-block;
+}
+
+.tui-loader-mini::before {
+	content: "⠋";
+	animation: tui-braille-mini-spin 1s steps(10) infinite;
+}
+
+@keyframes tui-braille-mini-spin {
+	0% {
+		content: "⠋";
+	}
+	10% {
+		content: "⠙";
+	}
+	20% {
+		content: "⠹";
+	}
+	30% {
+		content: "⠸";
+	}
+	40% {
+		content: "⠼";
+	}
+	50% {
+		content: "⠴";
+	}
+	60% {
+		content: "⠦";
+	}
+	70% {
+		content: "⠧";
+	}
+	80% {
+		content: "⠇";
+	}
+	90% {
+		content: "⠏";
+	}
+	100% {
+		content: "⠋";
+	}
+}
+
+.tui-loader-cyan,
+.tui-loader-mini.tui-loader-cyan {
+	color: #00ffff;
+}
+
+.tui-loader-blue,
+.tui-loader-mini.tui-loader-blue {
+	color: #5555ff;
+}
+
+.tui-loader-amber,
+.tui-loader-mini.tui-loader-amber {
+	color: #ffaa00;
+}
+
+.tui-loader-yellow,
+.tui-loader-mini.tui-loader-yellow {
+	color: #ffff00;
+}
+
+.tui-loader-red,
+.tui-loader-mini.tui-loader-red {
+	color: #ff0000;
+}
+
+.tui-loader-magenta,
+.tui-loader-mini.tui-loader-magenta {
+	color: #ff00ff;
+}
+
+.tui-loader-green,
+.tui-loader-mini.tui-loader-green {
+	color: #00ff00;
+}
+
+.tui-loader-gray,
+.tui-loader-mini.tui-loader-gray {
+	color: #888888;
+}
+
+.tui-loader-small,
+.tui-loader-mini.tui-loader-small {
+	font-size: 24px;
+}
+
+.tui-loader-medium,
+.tui-loader-mini.tui-loader-medium {
+	font-size: 36px;
+}
+
+.tui-loader-large,
+.tui-loader-mini.tui-loader-large {
+	font-size: 64px;
+}
+
+.tui-loader-xlarge,
+.tui-loader-mini.tui-loader-xlarge {
+	font-size: 96px;
+}
+
+.tui-loader-slow::before {
+	animation-duration: 1.2s;
+}
+
+.tui-loader-mini.tui-loader-slow::before {
+	animation-duration: 1.5s;
+}
+
+.tui-loader-fast::before {
+	animation-duration: 0.5s;
+}
+
+.tui-loader-mini.tui-loader-fast::before {
+	animation-duration: 0.6s;
+}

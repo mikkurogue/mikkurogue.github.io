@@ -47,7 +47,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 						justifyContent: "space-between",
 					}}
 				>
-					{project.name}
+					<span>
+						{project.name}{" "}
+						<div className="tui-loader-mini tui-loader-small tui-loader-fast"></div>
+					</span>
 					<Badge variant={active}>{active}</Badge>
 				</h3>
 				<p
