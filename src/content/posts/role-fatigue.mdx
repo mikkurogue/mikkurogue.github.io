@@ -1,0 +1,56 @@
+---
+title: "Role fatigue"
+date: "2027-02-03"
+author: "Mikkurogue"
+description: "A senior developer experiencing role fatigue"
+tags: ["role", "fatigue"]
+---
+
+## Introduction
+
+Lateyly I have been experiencing what I am calling "role fatigue". I am a senior full stack engineer (I hate the engineer title, but thats for another time) and I have realized a few things about myself. For context at my current job, I am mostly utilized for frontend work, some library work for internal libraries, I build internal tooling like DSL compilers and other fun data structure modelling. The most of my day though is spent working on the frontend, specifically on the perf work and actual typescript logic (type stuff, inferrence logic etc) and fixing the ever existing (and never ending) issues React/Next keeps serving.
+
+## The fatigue
+
+I have come to realize that I am just totally burnt out from the "node ecosystem", typescript, react, nestjs. Mostly because doing the same monotonous stuff, trying to solve peoples type issues constantly I yearn to turn back to my Rust projects. 
+
+React, and it's never ending stream of RCE's and CVE's from the worst feature known to man that is React Server Components, is by and large the main source of my fatigue here. The never ending dirty hacks that are considered "best practices" like that you cant use hooks conditionally and need to then create sub components just to circumvent the crazy rules is one of them. I can be honest and say "I do not enjoy writing frontend code".
+
+Nestjs... My old beloved. The framework that made me fall in love with nodejs at one point a million years ago (when I was rawdogging express.js). The fond memories I have... Are now just, that; memories. It's slow, its heavy, it has _awful_ developer experience. It's "enterprise slop" for those who don't want to do the real enterprise work and just write Java (or be cooler and use Scala). The main ORM is TypeORM which just f*ucking sucks. Just to have a service that depends on maybe another service with (terrible) DI (why mimic Angular? Everyone hates Angular...). There are no kind words I can give to it. Decorators are a nightmare, using classes as types is just impossible (unless doing something stupid like `typeof MyDto` to strip said decorators).
+
+## The solution?
+
+Frankly, I have in the past year spent enormous time writing Rust. I started 2025 off with the goal to learn Zig, and I enjoyed it. Zig is fantastic, but I just couldn't buy into it yet due to its constantly breaking API's and I just dont want to spend the time fixing every small project because again something changed and is breaking. So, even though I still keep up with Zig, I pivoted to Rust in around march/april. I wanted to just do some cool stuff. Write some cli tools here, a few TUI's there. I ended up being "Rust pilled", even with its faults. Slow compilation, very confusing syntax when using traits and trait bounds, the borrow checker (which is now so obvious to me). I have come to the realization however, after implementing a DSL compiler for our data model in Rust, that my team just wont even consider learning Rust for heavy, performance critical stuff. It's a sad state of affairs, and I don't like their reasoning. Here are a few examples;
+
+---
+1. Rust developers are hard to find
+2. It's not in the company's best interest to re-write critical parts of the stack in Rust
+3. It's not in the company's best interest to have developers learning Rust
+4. The syntax is ugly
+---
+
+And for each point I have counter arguments, which I have mentioned but usually falls on deaf ears.
+
+---
+1. We are actively looking to hire developers, and we can't even find one that can write JavaScript - it's not a "language" problem but a "criteria" problem
+2. It should be if the company wants better price-performance, lower overhead costs and more "safety" (I mean not necessarily memory safety here)
+3. Developers should understand how to learn a new language relatively quickly even if its only rudementary, the only way to learn is to build.
+  a. (sub point here that I made was that our current developers cant even write TypeScript, they throw `any` all over the shop when types "become too hard" - this was taken with offense which I understand but it pushes the point)
+4. Skill issue  
+---
+
+So, for me I now see a few forks in the road. I have aspirations to move my career forward. I think in my current role, I have stagnated. My skill as a developer is only increasing, my velocity and tempo is only increasing, my output is only increasing. I can only do so much to slow down. For me, I see it as such; move up the chain towards leadership and become a mentor for those who need the guidance more than our current dynamic can provide. Or, go all in for systems and just "start" again with the learning curve. The reason is simple; being a fullstack engineer/developer/programmer/code monkey is _exhausting_. I feel little joy doing what I do now. Not because I dislike my employer or my team (quite the contrary, I love working there and with the people I work with), but I dislike _how_ I do _what_ I do.
+
+But, what will I then do? I think the main option is the leadership/mentor role. Simply because I just dont have the sway or leverage to convince people who quite honestly in my view do not _care_ about the tech they use, meaning complacency === fine. They obviously care for tech, but care more about the short term.
+
+**Why** learn and invest into Rust when the TypeScript version works just fine (albeit slower, less effecient and with many more constraints due to resource cannibilzation)?
+**Why** learn systems design when a quick little draw.io diagram and vibe coded POC slop is also good enough?
+**Why** care about quality when "good enough" is satisfactory to not only the developers, but also to stakeholders?
+
+__Are we all just doomed to enshittify the internet, and subsequent software, forever? Are most developers just that complacent?__
+
+### Conclusion
+
+I have no idea how to conclude this. I just needed to write down something totally incoherent to be honest.
+
+
