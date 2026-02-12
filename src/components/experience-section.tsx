@@ -1,8 +1,8 @@
-const experiences = [
+mi const experiences = [
 	{
 		id: "bigmile",
 		company: "BigMile",
-		position: "Fullstack Engineer",
+		position: "Sr Software Engineer",
 		location: "Vantaa, Fi (Remote)",
 		period: "01.06.2022 - Present",
 		description:
