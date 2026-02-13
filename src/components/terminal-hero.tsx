@@ -6,7 +6,8 @@ import { match } from "ts-pattern";
 const personalInfo = {
 	name: "Mikku",
 	location: "Finland",
-	focus: "Memory & type safety, developer experience & ergonomics",
+	role: "Senior Software Engineer",
+	focus: "Systems, DevEx, Ergonomics",
 	stack: ["Rust", "TypeScript"],
 	keyboard: "BCorne 58 Split ",
 	switches: "Outem Silent Peach",
