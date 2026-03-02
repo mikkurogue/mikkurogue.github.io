@@ -2,6 +2,14 @@ import ProjectCard, { type Project } from "./project-card";
 
 const projects: Project[] = [
 	{
+		id: "tracing-zig",
+		name: "tracing-zig",
+		description: "Efficient tracer logging library in Zig, used by my own internal Zig projects that arent noteworthy."
+		tags: ["zig", "lib"],
+		url: "https://github.com/mikkurogue/tracing-zig",
+		active: true,
+	},
+{
 		id: "kunai",
 		name: "Kunai",
 		description: `
